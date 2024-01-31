@@ -17,6 +17,7 @@ function Projects() {
   const loaded = () => {
     return projects.map((project, idx) => (
       <div className="projectBox" key={idx}>
+        <section id="projects">
         <h3 className="projectName">{project.name}</h3>
         <img className="projectImage" src={project.image} />
         <p className="projectDescribe">{project.describe}</p>
@@ -28,6 +29,7 @@ function Projects() {
             <button className="liveSite">Live Site</button>
           </a>
         </div>
+        </section>
       </div>
     ));
   };

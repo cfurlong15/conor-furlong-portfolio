@@ -15,6 +15,7 @@ function About() {
   }, []);
 
   const loaded = () => (
+    <section id="about">
     <div className="About">
       <h1 className="aboutMe">About Me</h1>
 
@@ -29,6 +30,7 @@ function About() {
         </a>
       </div>
     </div>
+    </section>
   );
 
   return about ? loaded() : <h1>Loading...</h1>;
