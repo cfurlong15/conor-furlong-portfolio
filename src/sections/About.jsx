@@ -17,12 +17,12 @@ function About() {
   const loaded = () => (
     <section id="about">
     <div className="About">
-      <h1 className="aboutMe">About Me</h1>
+      <h1 className="aboutMe mb-5">About Me</h1>
 
       <p className="Bio">{about.bio}</p>
       <p className="Email">Contact me at {about.email}</p>
-      <div className="Socials">
-        <a className="Linkedin" href={about.linkedin}>
+      <div className="Socials mb-5 mt-5">
+        <a className="Linkedin mr-4" href={about.linkedin}>
           <button>LinkedIn</button>
         </a>
         <a className="Github" href={about.github}>

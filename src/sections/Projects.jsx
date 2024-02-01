@@ -16,19 +16,35 @@ function Projects() {
 
   const loaded = () => {
     return projects.map((project, idx) => (
-      <div className="projectBox" key={idx}>
+      <div className="mb-9" key={idx}>
         <section id="projects">
-        <h3 className="projectName">{project.name}</h3>
-        <img className="projectImage" src={project.image} />
-        <p className="projectDescribe">{project.describe}</p>
-        <div className="projectLinks">
-          <a href={project.git}>
-            <button className="github">Github</button>
-          </a>
-          <a href={project.live}>
-            <button className="liveSite">Live Site</button>
-          </a>
-        </div>
+          <div className="max-w-sm w-2/3 lg:max-w-full lg:flex min-w-2/3">
+            <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden hover:opacity-100">
+              <a href={project.live}>
+                <img src={project.image} />
+              </a>
+            </div>
+            <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal bg-slate-600">
+              <div className="mb-8">
+                <div className="text-white font-bold text-xl mb-2">
+                  {project.name}
+                </div>
+                <p className="text-white text-base">{project.describe}</p>
+              </div>
+              <div className="flex items-center">
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-violet-600 active:bg-violet-700">
+                  <a href={project.live}>Visit</a>
+                </span>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-violet-600 active:bg-violet-700">
+                  <a href={project.git}>GitHub</a>
+                </span>
+                {/* <div className="text-sm">
+        <p className="text-gray-900 leading-none">Jonathan Reinink</p>
+        <p className="text-gray-600">Aug 18</p>
+      </div> */}
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     ));

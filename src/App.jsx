@@ -14,6 +14,9 @@ function App() {
       <Header />
       <h1></h1>
       <About />
+      <section id="projects">
+      <h1 className="mb-5">Projects</h1>
+      </section>
       <Projects />
       <Footer />
     </div>
