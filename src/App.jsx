@@ -12,7 +12,7 @@ function App() {
     <div>
       <NavBar />
       <Header />
-      <h1>Conor Furlong Portfolio</h1>
+      <h1></h1>
       <About />
       <Projects />
       <Footer />
