@@ -19,12 +19,12 @@ function Projects() {
       <div className="mb-9" key={idx}>
         <section id="projects">
           <div className="max-w-sm w-2/3 lg:max-w-full lg:flex min-w-2/3">
-            <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden hover:opacity-100">
+            <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
               <a href={project.live}>
                 <img src={project.image} />
               </a>
             </div>
-            <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal bg-slate-600">
+            <div className="bg-slate-600 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
               <div className="mb-8">
                 <div className="text-white font-bold text-xl mb-2">
                   {project.name}
