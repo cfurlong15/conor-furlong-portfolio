@@ -10,7 +10,7 @@ function App() {
   
 
   return (
-    <div>
+    <div className="bg-gradient-to-r from-sky-700 to-indigo-400">
       <NavBar />
       <Header />
       <h1></h1>

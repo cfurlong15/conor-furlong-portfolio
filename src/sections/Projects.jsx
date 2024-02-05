@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-//import "./Projects.css";
+import "./Projects.css";
 
 function Projects() {
   const [projects, setProjects] = useState(null);
@@ -24,14 +24,14 @@ function Projects() {
                 <img src={project.image} />
               </a>
             </div>
-            <div className="bg-slate-600 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div className="bg-slate-600 projectBox border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
               <div className="mb-8">
                 <div className="text-white font-bold text-xl mb-2">
                   {project.name}
                 </div>
                 <p className="text-white text-base">{project.describe}</p>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-violet-600 active:bg-violet-700">
                   <a href={project.live}>Visit</a>
                 </span>
