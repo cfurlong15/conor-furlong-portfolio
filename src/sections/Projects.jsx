@@ -16,32 +16,28 @@ function Projects() {
 
   const loaded = () => {
     return projects.map((project, idx) => (
-      <div className="mb-9" key={idx}>
+      <div className="ml-12 mb-20" key={idx}>
         <section id="projects">
           <div className="max-w-sm w-2/3 lg:max-w-full lg:flex min-w-2/3">
-            <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
+            <div className="h-72 lg:h-72 lg:w-72 flex-none bg-cover rounded-lg lg:rounded-2xl overflow-hidden">
               <a href={project.live}>
-                <img src={project.image} />
+                <img src={project.image} className="w-full h-full object-cover" />
               </a>
             </div>
-            <div className="bg-slate-600 projectBox border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div className="projectBox mt-10 lg:ml-20 lg:mt-10">
               <div className="mb-8">
-                <div className="text-white font-bold text-xl mb-2">
+                <div className="text-white font-bold text-4xl mb-6">
                   {project.name}
                 </div>
-                <p className="text-white text-base">{project.describe}</p>
+                <p className="text-white text-base text-2xl">{project.describe}</p>
               </div>
               <div className="flex items-center justify-center">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-violet-600 active:bg-violet-700">
+                <span className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mr-6 mb-2 hover:bg-indigo-100">
                   <a href={project.live}>Visit</a>
                 </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-violet-600 active:bg-violet-700">
+                <span className="projectButton inline-block bg-gray-200 rounded-full text-md font-semibold text-gray-700 mr-2 mb-2 hover:bg-indigo-100">
                   <a href={project.git}>GitHub</a>
                 </span>
-                {/* <div className="text-sm">
-        <p className="text-gray-900 leading-none">Jonathan Reinink</p>
-        <p className="text-gray-600">Aug 18</p>
-      </div> */}
               </div>
             </div>
           </div>

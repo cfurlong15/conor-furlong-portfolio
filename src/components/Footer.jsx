@@ -1,9 +1,15 @@
 function Footer() {
-    return (
-        <div>
-            <h2>Footer</h2>
-        </div>
-    )
+  return (
+    <div>
+      <div>
+        <h1>
+          <a className="text-white text-lg" href="#header">
+            Back to Top
+          </a>
+        </h1>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;

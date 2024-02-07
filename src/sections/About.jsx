@@ -15,14 +15,14 @@ function About() {
   }, []);
 
   const loaded = () => (
-    <section id="about">
+    <section id="about" className="mt-10">
     <div className="About">
-      <h1 className="aboutMe mb-5">About Me</h1>
+      <h1 className="aboutMe mb-5">Conor Furlong</h1>
 
-      <p className="Bio">{about.bio}</p>
-      <p className="Email">Contact me at {about.email}</p>
-      <div className="Socials mb-5 mt-5">
-        <a className="Linkedin mr-4" href={about.linkedin}>
+      <p className="Bio text-2xl ml-8 mr-8">{about.bio}</p>
+      <p className="Email text-2xl mt-8">Contact me at {about.email}</p>
+      <div className="Socials mt-8">
+        <a className="Linkedin mr-10" href={about.linkedin}>
           <button>LinkedIn</button>
         </a>
         <a className="Github" href={about.github}>

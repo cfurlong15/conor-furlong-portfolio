@@ -4,20 +4,23 @@
       "live": "https://cfurlong15.github.io/Project-1-Browser-Based-Game/",
       "git": "https://github.com/cfurlong15/Project-1-Browser-Based-Game",
       "image": "./images/concentration-image.png",
-      "describe": "A cosmic-themed interactive card-based game designed to test your memory and beat your previous records."
+      "describe": "A cosmic-themed interactive card-based game designed to test your memory and beat your previous records.",
+      "idx": "1"
     },
     {
       "name": "Developing Feelings",
       "live": "https://developing-feelings-d5735203c312.herokuapp.com/",
       "git": "https://github.com/CarterN2000/Project-2",
       "image": "./images/developing-feelings-image.png",
-      "describe": "A dating app developed by software engineers, for software engineers. Create an account and connect with people like you."
+      "describe": "A dating app developed by software engineers, for software engineers. Create an account and connect with people like you.",
+      "idx": "2"
     },
     {
       "name": "WeatherWise",
       "live": "https://weather-wise-weather.netlify.app/",
       "git": "https://github.com/cfurlong15/Project3-Frontend?tab=readme-ov-file",
       "image": "./images/weatherwise-image.png",
-      "describe": "An easy-to-use and visually appealing app to help anyone find current weather data in their city."
+      "describe": "An easy-to-use and visually appealing app to help anyone find current weather data in their city.",
+      "idx": "3"
     }
   ]

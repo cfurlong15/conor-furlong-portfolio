@@ -17,7 +17,7 @@ function App() {
       <About />
       <Skills />
       <section id="projects">
-      <h1 className="mb-5 mt-5">Projects</h1>
+      <h1 className="mb-14 mt-20">Projects</h1>
       </section>
       <Projects />
       <Footer />
