@@ -1,10 +1,10 @@
 [
     {
-      "name": "Concentration",
-      "live": "https://cfurlong15.github.io/Project-1-Browser-Based-Game/",
-      "git": "https://github.com/cfurlong15/Project-1-Browser-Based-Game",
-      "image": "./images/concentration-image.png",
-      "describe": "A cosmic-themed interactive card-based game designed to test your memory and beat your previous records.",
+      "name": "TaskTrackr",
+      "live": "https://project-management-app-6d1cc6b1809f.herokuapp.com/",
+      "git": "https://github.com/cfurlong15/Project4",
+      "image": "./images/tasktrackr.png",
+      "describe": "A detailed and organized project management app that tracks projects, tasks, status, and dates. Use it either for large-scale projects, or even simple to-do lists.",
       "idx": "1"
     },
     {
