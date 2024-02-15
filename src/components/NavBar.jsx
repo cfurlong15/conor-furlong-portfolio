@@ -2,7 +2,7 @@ import './NavBar.css'
 
 function NavBar() {
     return (
-        <div className="nav-container">
+        <div className="nav-container mt-3">
         <nav>
             <ul>
                 <li><a href="#header">Back to Top</a></li>

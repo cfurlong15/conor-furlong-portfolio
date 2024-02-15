@@ -1,7 +1,7 @@
 function Header() {
     return (
-        <section id="header">
-            <h2>Top</h2>
+        <section className="text-left ml-3" id="header">
+            <h2 className="text-3xl">Personal Portfolio</h2>
         </section>
     )
 }

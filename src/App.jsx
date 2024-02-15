@@ -13,7 +13,6 @@ function App() {
     <div className="bg-gradient-to-r from-sky-700 to-indigo-400">
       <NavBar />
       <Header />
-      <h1></h1>
       <About />
       <Skills />
       <section id="projects">

@@ -21,7 +21,7 @@ function About() {
       <img className="h-60 lg:w-80 lg:w-80 lg:h-full rounded-full border-4" src={about.headshot} alt="Conor Furlong Headshot" />
       </div>
       <h1 className="aboutMe">I&apos;m Conor Furlong,</h1>
-      <h1 className="aboutMe mb-5">Welcome!</h1>
+      <h1 className="aboutMe mb-20">Welcome!</h1>
       <div className="flex flex-col md:flex-row justify-between">
         <div className="md:w-1/2">
       <p className="Bio flex justify-start text-2xl ml-8 mr-8 mb-6 lg:text-left">{about.bio}</p>
