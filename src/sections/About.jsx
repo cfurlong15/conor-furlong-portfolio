@@ -17,8 +17,11 @@ function About() {
   const loaded = () => (
     <section id="about" className="mt-10">
     <div className="About">
-      <h1 className="aboutMe mb-5">Conor Furlong</h1>
-
+      <div className="flex justify-center mb-5">
+      <img className="h-full w-80 rounded-full" src={about.headshot} alt="Conor Furlong Headshot" />
+      </div>
+      <h1 className="aboutMe">I'm Conor Furlong,</h1>
+      <h1 className="aboutMe mb-5">Welcome!</h1>
       <p className="Bio text-2xl ml-8 mr-8">{about.bio}</p>
       <p className="Email text-2xl mt-8">Contact me at {about.email}</p>
       <div className="Socials mt-8">
