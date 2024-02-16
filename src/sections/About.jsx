@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-//import "./About.css";
+import "./Projects.css";
 
 function About() {
   const [about, setAbout] = useState(null);
@@ -30,13 +30,13 @@ function About() {
       <p className="Bio flex justify-end text-2xl ml-8 mr-8 lg:text-right">{about.bio2}</p>
       </div>
       </div>
-      <p className="Email text-2xl mt-8">Contact me at {about.email}</p>
+      <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mt-16 mr-10 hover:bg-indigo-100" href={`mailto:${about.email}`}>Contact Me!</a>
       <div className="Socials mt-8">
-        <a className="Linkedin mr-10" href={about.linkedin}>
-          <button>LinkedIn</button>
+        <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-2 mr-32 hover:bg-indigo-100" href={about.linkedin}>
+          LinkedIn
         </a>
-        <a className="Github" href={about.github}>
-          <button>GitHub</button>
+        <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-2 mr-10 hover:bg-indigo-100" href={about.github}>
+          GitHub
         </a>
       </div>
     </div>

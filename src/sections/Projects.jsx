@@ -32,11 +32,11 @@ function Projects() {
                 <p className="text-white text-base text-2xl">{project.describe}</p>
               </div>
               <div className="flex items-center justify-center">
-                <span className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mr-6 mb-2 hover:bg-indigo-100">
-                  <a href={project.live}>Visit</a>
+                <span className="">
+                  <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mr-6 mb-2 hover:bg-indigo-100" href={project.live}>Visit</a>
                 </span>
-                <span className="projectButton inline-block bg-gray-200 rounded-full text-md font-semibold text-gray-700 mr-2 mb-2 hover:bg-indigo-100">
-                  <a href={project.git}>GitHub</a>
+                <span className="">
+                  <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mr-6 mb-2 hover:bg-indigo-100" href={project.git}>GitHub</a>
                 </span>
               </div>
             </div>
