@@ -23,7 +23,7 @@ function About() {
       <img className="h-60 lg:w-80 lg:w-80 lg:h-full rounded-full border-4" src={about.headshot} alt="Conor Furlong Headshot" />
       </div>
       <h1 className="aboutMe">I&apos;m Conor Furlong,</h1>
-      <h1 className="aboutMe mb-20">Welcome!</h1>
+      <h1 className="aboutMe mb-10">Welcome!</h1>
       <div className="flex flex-col md:flex-row justify-between">
         <div className="md:w-1/2">
       <p className="Bio flex justify-start text-2xl ml-8 mr-8 mb-6 lg:text-left">{about.bio}</p>
@@ -32,15 +32,19 @@ function About() {
       <p className="Bio flex justify-end text-2xl ml-8 mr-8 lg:text-right">{about.bio2}</p>
       </div>
       </div>
-      <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mt-16 mr-10 hover:bg-indigo-100" href={`mailto:${about.email}`}>Contact Me!</a>
-      <a target="blank" className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mt-16 mr-10 hover:bg-indigo-100" href={resume} download>Download Resume</a>
-      <div className="Socials mt-8">
-        <a target="blank" className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-2 mr-32 hover:bg-indigo-100" href={about.linkedin}>
+      <div className="flex flex-wrap justify-center mt-10">
+        <div className="flex flex-col items-center mx-4 my-2">
+      <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-5 hover:bg-indigo-100" href={`mailto:${about.email}`}>Contact Me!</a>
+      <a target="blank" className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 hover:bg-indigo-100" href={resume} download>Resume</a>
+      </div>
+      <div className="flex flex-col items-center mx-4 my-2">
+        <a target="blank" className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-5 hover:bg-indigo-100" href={about.linkedin}>
           LinkedIn
         </a>
-        <a target="blank" className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-2 mr-12 hover:bg-indigo-100" href={about.github}>
+        <a target="blank" className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-2 hover:bg-indigo-100" href={about.github}>
           GitHub
         </a>
+      </div>
       </div>
     </div>
     </section>
