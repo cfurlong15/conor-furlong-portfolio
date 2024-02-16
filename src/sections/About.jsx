@@ -4,6 +4,8 @@ import "./Projects.css";
 function About() {
   const [about, setAbout] = useState(null);
 
+  const resume = "file:///Users/conorfurlong/Downloads/Resume%20-%20Conor%20Furlong.pdf"
+
   const getAboutData = async () => {
     const response = await fetch("./about.json");
     const data = await response.json();
@@ -31,11 +33,12 @@ function About() {
       </div>
       </div>
       <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mt-16 mr-10 hover:bg-indigo-100" href={`mailto:${about.email}`}>Contact Me!</a>
+      <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mt-16 mr-10 hover:bg-indigo-100" href={resume} download>Download Resume</a>
       <div className="Socials mt-8">
         <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-2 mr-32 hover:bg-indigo-100" href={about.linkedin}>
           LinkedIn
         </a>
-        <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-2 mr-10 hover:bg-indigo-100" href={about.github}>
+        <a className="projectButton inline-block bg-gray-200 rounded-full text-md font-extrabold text-gray-700 mb-2 mr-12 hover:bg-indigo-100" href={about.github}>
           GitHub
         </a>
       </div>

@@ -10,3 +10,11 @@
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+.projectImage:hover {
+    border-color: #646cff;
+  }
+.projectImage:focus,
+.projectImage:focus-visible {
+  outline: 8px auto -webkit-focus-ring-color;
+}
