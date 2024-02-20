@@ -4,7 +4,7 @@ import "./Projects.css";
 function About() {
   const [about, setAbout] = useState(null);
 
-  const resume = "https://drive.google.com/file/d/1P3BKTpXf-NN0QttWir1jU5meFhxOlKNB/view?usp=sharing"
+  const resume = "https://drive.google.com/file/d/1YwpPFMle_fDYSK5xlO8ckM6JfdbA7FX_/view?usp=sharing"
 
   const getAboutData = async () => {
     const response = await fetch("./about.json");
